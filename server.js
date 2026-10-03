@@ -21,7 +21,7 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 4000;
 const CLIENT_URL = process.env.CLIENT_URL;
 
-// app.set("trust proxy", 1); //for the render (secure cookies won't work without it)
+app.set("trust proxy", 1); //for the render (secure cookies won't work without it)
 
 //setting cors for cross site cookies handling
 
